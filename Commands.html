@@ -1,3 +1,4 @@
+
 <h3> git cherry-pick [insert commit reference]</h3>
 <p>Tillämpa en commits ändringar på en annan gren.</p>
 <h3>git clone <repository-url></h3>
@@ -28,4 +29,34 @@
 <p>Anpassa konfigurationer som är lagrade i din hemkatalog och kan skriva över Git config-systeminställningar</p>
 <h3>git config --email</h3>
 <p>Ställer in e-postmeddelandet som är kopplat till dina Git-commits och andra Git-åtgärder.</p>
+<h3>git branch </h3>
+<p> med git branch kan man se alla lokala branches som existerar i sin git repository</p>
+<h3>git branch -a </h3>
+<p> med git branch -a kan man se alla lokala och o-lokala branches i sin git repository</p>
+<h3>git branch -c </h3>
+<p> git branch -c kan man använda ifall man skulle vilja kopera en branch</p>
+<h3>git branch -d <branch-name> </h3>
+<p> git branch -d <branch-name> används för att delete:a en lokal branch, men kommer inte funka om det finns icke mergat material</p>
+<h3>git branch -m <branch-name> <new-branch-name> </h3>
+<p> detta git kommand används för att byta namn på sin branch, kan användas om det blir konflikter vid merge eller liknande</p>
+<h3>git branch -r </h3>
+<p> används för att see alla branches som inte är lokala</p>
+<h3>git push <remote> --delete <remote-branch-name> </h3>
+<p> detta kommando används ifall man skulle vilja ta bort en icke lokal branch </p>
+<h3>git push --set-upstream <remote> <branch> </h3>
+<p> detta kommando används för att skappa en upstream branch, när dett kommando körs kommer din lokala branch pushas till en ny remote branch</p>
+<h3>git checkout <branch-name> </h3>
+<p> detta kommando avänds för att byta från en branch till en annan </p>
+<h3>git checkout -b <branch-name> </h3>
+<p> detta kommando används ifall man vill göra en ny branch och direkt byta till den nya branchen </p>
+<h3>git checkout -b <branch-name><remote-name>/<branch-name> </h3>
+<p> detta kommando används för att skapa en lokal branch från en remote branch och sedan byta till den branchen </p>
+<h3>git checkout <commit hash> </h3>
+<p> detta kommando används för att byta till en föregående commit som gjorts </p>
+<h3>git checkout <tag name> </h3>
+<p> detta kommando används för att "Detach head" vilket menas att ditt repository nu är "löst" vilket gör att man
+måste vara extra vacksam om man forstätter sitt arbete med commits då de kan tappas bort väldigt lätt </p>
+<h3>git checkout -b <branch-name><tag-name> <h3>
+<p> detta kommando är väldigt likt förra kommandot men i detta fallet är det på branch</p>
+<h3>git cherry-pick [insert commit refrence]</h3>
 
