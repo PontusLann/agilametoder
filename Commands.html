@@ -1,3 +1,47 @@
+<h3>git merge</h3>
+<p>Används för att sammanfoga två olika branches i Git-repositoryn. När man använder detta kommando, kommer Git att integrera alla ändringar från den angivna grenen till den nuvarande grenen. </p>
+
+<h3>git merge <branch-name></h3>
+<p>Med detta kommando kan man sammanfoga en annan branch i den nuvarande grenen i Git-repositoryn. Detta görs genom att ange namnet på den gren som ska sammanfogas. </p>
+
+<h3>git merge --abort</h3>
+<p>Om det uppstår problem under en merge, kan man avbryta processen genom att använda detta Git-kommando. Detta gör att sammanfogningen avbryts och allt återställs till hur det var innan sammanfogningen påbörjades. </p>
+
+<h3>git merge --continue</h3>
+<p>När man har löst eventuella konflikter som uppstår under en merge, kan man fortsätta processen genom att använda detta Git-kommando. Detta gör att Git fortsätter med sammanfogningen och integrerar de ändringar som varit blockerade av konflikterna. </p>
+
+<h3>git merge --squash</h3>
+<p>Med detta kommand kan man slå ihop alla ändringar från en annan branch till en enda commit i den nuvarande grenen. Detta kan vara användbart om man vill ha en renare historik och slå ihop flera mindre commits till en enda större commit. </p>
+
+<h3>git merge --no-commit</h3>
+<p>Genom att använda detta Git-kommando kan man sammanfoga två branches utan att skapa en automatisk commit. Detta gör att man kan fortsätta arbeta med ändringarna och eventuellt göra fler justeringar innan man utför en commit. </p>
+
+<h3>git merge --no-ff</h3>
+<p>När man sammanfogar två branches i Git, skapar Git automatiskt en ny commit. Genom att använda detta Git-kommando kan man tvinga Git att skapa en ny commit även om sammanfogningen är enkel och inga konflikter uppstår. </p>
+
+<h3>git pull</h3>
+<p>Detta Git-kommando används för att hämta alla ändringar från en remote branch och integrera dem i den lokala grenen. Detta kommando innehåller både git fetch och git merge. </p>
+
+<h3>git pull --quiet</h3>
+<p>När man använder detta Git-kommando kommer Git att utföra git pull utan att visa någon output på skärmen. </h3>
+
+<h3>git pull --verbose</h3>
+<p>Detta Git-kommando utför en git pull, men visar mer detaljerad information på skärmen än vad som visas som standard. Detta är användbart om man vill se mer information om de ändringar som hämtas eller om det uppstår problem under hämtningen. </p>
+
+<h3>git pull --squash</h3>
+<p>Genom att använda detta Git-kommando kan man slå ihop alla ändringar från en branch till en enda commit i den lokala grenen. Istället för att utföra en sammanfogning av varje commit i fjärrgrenen, slås de alla samman till en enda commit i den lokala grenen. </p>
+
+<h3>git pull --no-commit</h3>
+<p>Om man inte vill att Git automatiskt ska skapa en commit när man hämtar och integrerar ändringar från en branch, kan man använda detta Git-kommando. Istället för att skapa en commit, lägger Git de integrerade ändringarna i en icke-committad ändringssamling (change set), vilket gör det möjligt att redigera samlingen innan en commit utförs. </p>
+
+<h3>git pull --no-ff</h3>
+<p>Som standard skapar Git en enkel "merge-commit" när man hämtar och integrerar ändringar från en fjärrgren. Genom att använda detta Git-kommando tvingar man Git att skapa en ny commit även om sammanfogningen är enkel och inga konflikter uppstår. </p>
+
+<h3>git pull --all</h3>
+<p>Detta Git-kommando används för att hämta alla ändringar från alla remote branches och integrera dem i motsvarande lokala branches. Detta kommando uppdaterar alla grenar i repositoryn med de senaste ändringarna från fjärrservern.</p>
+
+<h3>git pull --dry-run</h3>
+<p>Om man vill se vad som kommer att hända vid en git pull utan faktiskt utföra kommandot, kan man använda detta Git-kommando. Detta kommer att simulera utförandet av git pull och visa vilka ändringar som skulle hämtas utan att faktiskt hämta dem. Detta kan vara användbart för att se vad som skulle hända utan att riskera att råka skriva över eller förlora några lokala ändringar. </p>
 
 <h3> git cherry-pick [insert commit reference]</h3>
 <p>Tillämpa en commits ändringar på en annan gren.</p>
