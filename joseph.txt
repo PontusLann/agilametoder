@@ -1,0 +1,16 @@
+<h3> git cherry-pick [insert commit refrence]</h3>
+<h3> git merge</h3>
+<h3> git merge <branch-name></h3>
+<h3> git merge --abort</h3>
+<h3> git merge --continue</h3>
+<h3> git merge --squash</h3>
+<h3> git merge --no-commit</h3>
+<h3> git merge --no-ff</h3>
+<h3> git pull</h3>
+<h3> git pull --quiet</h3>
+<h3> git pull --verbose</h3>
+<h3> git pull --squash</h3>
+<h3> git pull --no-commit</h3>
+<h3> git pull --no-ff</h3>
+<h3> git pull --all</h3>
+<h3> git pull --dry-run</h3>
