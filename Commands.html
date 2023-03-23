@@ -1,1 +1,106 @@
+<h3>git merge</h3>
+<p>Används för att sammanfoga två olika branches i Git-repositoryn. När man använder detta kommando, kommer Git att integrera alla ändringar från den angivna grenen till den nuvarande grenen. </p>
+
+<h3>git merge <branch-name></h3>
+<p>Med detta kommando kan man sammanfoga en annan branch i den nuvarande grenen i Git-repositoryn. Detta görs genom att ange namnet på den gren som ska sammanfogas. </p>
+
+<h3>git merge --abort</h3>
+<p>Om det uppstår problem under en merge, kan man avbryta processen genom att använda detta Git-kommando. Detta gör att sammanfogningen avbryts och allt återställs till hur det var innan sammanfogningen påbörjades. </p>
+
+<h3>git merge --continue</h3>
+<p>När man har löst eventuella konflikter som uppstår under en merge, kan man fortsätta processen genom att använda detta Git-kommando. Detta gör att Git fortsätter med sammanfogningen och integrerar de ändringar som varit blockerade av konflikterna. </p>
+
+<h3>git merge --squash</h3>
+<p>Med detta kommand kan man slå ihop alla ändringar från en annan branch till en enda commit i den nuvarande grenen. Detta kan vara användbart om man vill ha en renare historik och slå ihop flera mindre commits till en enda större commit. </p>
+
+<h3>git merge --no-commit</h3>
+<p>Genom att använda detta Git-kommando kan man sammanfoga två branches utan att skapa en automatisk commit. Detta gör att man kan fortsätta arbeta med ändringarna och eventuellt göra fler justeringar innan man utför en commit. </p>
+
+<h3>git merge --no-ff</h3>
+<p>När man sammanfogar två branches i Git, skapar Git automatiskt en ny commit. Genom att använda detta Git-kommando kan man tvinga Git att skapa en ny commit även om sammanfogningen är enkel och inga konflikter uppstår. </p>
+
+<h3>git pull</h3>
+<p>Detta Git-kommando används för att hämta alla ändringar från en remote branch och integrera dem i den lokala grenen. Detta kommando innehåller både git fetch och git merge. </p>
+
+<h3>git pull --quiet</h3>
+<p>När man använder detta Git-kommando kommer Git att utföra git pull utan att visa någon output på skärmen. </h3>
+
+<h3>git pull --verbose</h3>
+<p>Detta Git-kommando utför en git pull, men visar mer detaljerad information på skärmen än vad som visas som standard. Detta är användbart om man vill se mer information om de ändringar som hämtas eller om det uppstår problem under hämtningen. </p>
+
+<h3>git pull --squash</h3>
+<p>Genom att använda detta Git-kommando kan man slå ihop alla ändringar från en branch till en enda commit i den lokala grenen. Istället för att utföra en sammanfogning av varje commit i fjärrgrenen, slås de alla samman till en enda commit i den lokala grenen. </p>
+
+<h3>git pull --no-commit</h3>
+<p>Om man inte vill att Git automatiskt ska skapa en commit när man hämtar och integrerar ändringar från en branch, kan man använda detta Git-kommando. Istället för att skapa en commit, lägger Git de integrerade ändringarna i en icke-committad ändringssamling (change set), vilket gör det möjligt att redigera samlingen innan en commit utförs. </p>
+
+<h3>git pull --no-ff</h3>
+<p>Som standard skapar Git en enkel "merge-commit" när man hämtar och integrerar ändringar från en fjärrgren. Genom att använda detta Git-kommando tvingar man Git att skapa en ny commit även om sammanfogningen är enkel och inga konflikter uppstår. </p>
+
+<h3>git pull --all</h3>
+<p>Detta Git-kommando används för att hämta alla ändringar från alla remote branches och integrera dem i motsvarande lokala branches. Detta kommando uppdaterar alla grenar i repositoryn med de senaste ändringarna från fjärrservern.</p>
+
+<h3>git pull --dry-run</h3>
+<p>Om man vill se vad som kommer att hända vid en git pull utan faktiskt utföra kommandot, kan man använda detta Git-kommando. Detta kommer att simulera utförandet av git pull och visa vilka ändringar som skulle hämtas utan att faktiskt hämta dem. Detta kan vara användbart för att se vad som skulle hända utan att riskera att råka skriva över eller förlora några lokala ändringar. </p>
+
+<h3> git cherry-pick [insert commit reference]</h3>
+<p>Tillämpa en commits ändringar på en annan gren.</p>
+<h3>git clone <repository-url></h3>
+<p>Klona ett specificerat repository</p>
+<h3>git clone <repository-url> <directory-name></h3>
+<p>Klona  ett arkiv och namnge den lokala katalogen</p>
+<h3>git clone <repository-url> --origin <name></h3>
+<p>Klona ett arkiv och namnge fjärrkontrollen (<namn>). Om du inte vill namnge fjärrkontrollen, kommer Git att tillhandahålla standardnamnets ursprung.</p>
+<h3>git clone <repository-url> --branch <branch-name></h3>
+<p>Klona ett arkiv och kolla in den specifika grenen.</p>
+<h3>git clone <repository-url> --depth <depth></h3>
+<p>Klona ett arkiv med ett specificerat antal commits</p>
+<h3>git clone <repository-url> --no-tags </h3>
+<p>Klona ett arkiv utan att kopiera repets taggar.</p>
+<h3>git status</h3>
+<p>Visa en lista över filer  i din staging-katalog med tillhörande filstatus.</p>
+<h3>git add</h3>
+<p> Om du kör det här kommandot med ett associerat filnamn kommer filändringarna att placeras i din mellanlagringskatalog.</p>
+<h3>git commit</h3>
+<p>Spara ändringar i ditt Git-förråd. Om du kör det här kommandot med ett associerat filnamn sparas filändringarna i din repo.</p>
+<h3>git commit -a</h3>
+<p>Lägg till alla ändrade och borttagna filer i din arbetskatalog till den aktuella commit.</p>
+<h3>git commit --amend</h3>
+<p>Redigera ett Git commit-meddelande genom att lägga till ett meddelande inom citattecken efter kommandot.</p>
+<h3>git commit -m</h3>
+<p>Lägg till ett Git commit-meddelande. Lägg till ditt meddelande inom citattecken efter kommandot.</p>
+<h3>git config --global </h3>
+<p>Anpassa konfigurationer som är lagrade i din hemkatalog och kan skriva över Git config-systeminställningar</p>
+<h3>git config --email</h3>
+<p>Ställer in e-postmeddelandet som är kopplat till dina Git-commits och andra Git-åtgärder.</p>
+<h3>git branch </h3>
+<p> med git branch kan man se alla lokala branches som existerar i sin git repository</p>
+<h3>git branch -a </h3>
+<p> med git branch -a kan man se alla lokala och o-lokala branches i sin git repository</p>
+<h3>git branch -c </h3>
+<p> git branch -c kan man använda ifall man skulle vilja kopera en branch</p>
+<h3>git branch -d <branch-name> </h3>
+<p> git branch -d <branch-name> används för att delete:a en lokal branch, men kommer inte funka om det finns icke mergat material</p>
+<h3>git branch -m <branch-name> <new-branch-name> </h3>
+<p> detta git kommand används för att byta namn på sin branch, kan användas om det blir konflikter vid merge eller liknande</p>
+<h3>git branch -r </h3>
+<p> används för att see alla branches som inte är lokala</p>
+<h3>git push <remote> --delete <remote-branch-name> </h3>
+<p> detta kommando används ifall man skulle vilja ta bort en icke lokal branch </p>
+<h3>git push --set-upstream <remote> <branch> </h3>
+<p> detta kommando används för att skappa en upstream branch, när dett kommando körs kommer din lokala branch pushas till en ny remote branch</p>
+<h3>git checkout <branch-name> </h3>
+<p> detta kommando avänds för att byta från en branch till en annan </p>
+<h3>git checkout -b <branch-name> </h3>
+<p> detta kommando används ifall man vill göra en ny branch och direkt byta till den nya branchen </p>
+<h3>git checkout -b <branch-name><remote-name>/<branch-name> </h3>
+<p> detta kommando används för att skapa en lokal branch från en remote branch och sedan byta till den branchen </p>
+<h3>git checkout <commit hash> </h3>
+<p> detta kommando används för att byta till en föregående commit som gjorts </p>
+<h3>git checkout <tag name> </h3>
+<p> detta kommando används för att "Detach head" vilket menas att ditt repository nu är "löst" vilket gör att man
+måste vara extra vacksam om man forstätter sitt arbete med commits då de kan tappas bort väldigt lätt </p>
+<h3>git checkout -b <branch-name><tag-name> <h3>
+<p> detta kommando är väldigt likt förra kommandot men i detta fallet är det på branch</p>
+<h3>git cherry-pick [insert commit refrence]</h3>
 

@@ -1,0 +1,15 @@
+<h3> git branch </h3>
+<h3> git branch -a </h3>
+<h3> git branch -c </h3>
+<h3> git branch -d <branch-name> </h3>
+<h3> git branch -m <branch-name> <new-branch-name> </h3>
+<h3> git branch -r </h3>
+<h3> git push <remote> --delete <remote-branch-name> </h3>
+<h3> git push --set-upstream <remote> <branch></h3>
+<h3> git checkout <branch-name> </h3>
+<h3> git checkout -b <branch-name> </h3>
+<h3> git checkout -b <branch-name><remote-name>/<branch-name> </h3>
+<h3> git checkout <commit hash> </h3>
+<h3> git checkout <tag name> </h3>
+<h3> git checkout -b <branch-name><tag-name><h3>
+<h3> git cherry-pick [insert commit refrence]</h3>
